@@ -1,0 +1,17 @@
+fieldset{
+    background-color: #f5bcdd; /*taust*/
+    color:  #660069; /*tekstivärv*/
+    font-family: 'Lato', sans-serif;
+}
+legend{
+    background-color: #b05a92; /*taust*/
+    color: #3f0141; /*tekstivärv*/
+    font-family: 'Lato', sans-serif;
+}
+input[type=number]{
+
+}
+img{
+    width: 400px;
+    height: 300px;
+}

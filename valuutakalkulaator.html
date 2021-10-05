@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Valuuta kalkulaator</title>
+    <link rel="stylesheet" href="kalkstyle.css">
+</head>
+<body>
+<h1>Valuuta kalkulaator var 1</h1>
+<form name="var1" onclick="return validateForm()" method="post">
+    <label for="kogus">Siseta kogus:</label>
+    <input type="number" name="kogus" id="kogus"> euro
+    <br>
+    <fieldset>
+        <legend>Vali valuuta:</legend>
+
+        <input type="radio" name="valuuta1" id="dollar" value="dollar" onchange="radioChange(event)">
+        <label for="dollar">dollar</label>
+        <br>
+        <input type="radio" name="valuuta1" id="rouble" value="rouble" onchange="radioChange(event)">
+        <label for="rouble">rouble</label>
+        <br>
+        <input type="radio" name="valuuta1" id="bitcoin" value="bitcoin" onchange="radioChange(event)">
+        <label for="bitcoin">bitcoin</label>
+        <br>
+        <input type="radio" name="valuuta1" id="kroon" value="kroon" onchange="radioChange(event)">
+        <label for="kroon">kroon</label>
+        <br>
+        <input type="radio" name="valuuta1" id="KZT" value="KZT" onchange="radioChange(event)">
+        <label for="KZT">KZT</label>
+        <br>
+    </fieldset>
+    <div id="vastus">Siia tuleb vastus...</div>
+</form>
+
+<img src="img/dengi.png" alt="pilt" id="img">
+<h1>Valuuta kalkulaator var 2</h1>
+<form name="var2">
+    <label for="kogus2">Siseta kogus:</label>
+    <input type="number" name="kogus2" id="kogus2"> euro
+    <br>
+    <select  name="valuuta2" onchange="selectOptionChange(event)">
+        <option value="dollar">dollar</optionvalue>
+        <option value="rouble">rouble</optionvalue>
+        <option value="bitcoin">bitcoin</optionvalue>
+        <option value="kroon">kroon</optionvalue>
+        <option value="KZT">KZT</optionvalue>
+    </select>
+    <div id="vastus2">Siia tuleb vastus...</div>
+</form>
+
+<h1>Valuuta kalkulaator var 3</h1>
+<form name="var3">
+    <label for="kogus3">Siseta kogus:</label>
+    <input type="number" name="kogus3" id="kogus3"> euro
+    <br>
+    <label for="valuutanimi">Siseta valuuta(dollar, rouble, kroon, BTC, KZT):</label>
+    <input type="text" name="valuutanimi" id="valuutanimi" placeholder="Valuuta nimetus" onsubmit="inputCurrencyText()">
+    <input type="button" onclick="inputCurrencyText()" value="OK">
+    <div id="vastus3">Siia tuleb vastus...</div>
+</form>
+
+<h1>Maht</h1>
+<form name="var4">
+    <label for="kogus4">Siseta:</label>
+    <input type="number" name="kogus4" id="kogus4"> km2
+    <br>
+    <select  name="valuuta4" onchange="selectChange(event)">
+        <option value="ga">gektaar</optionvalue>
+        <option value="akr">akr</optionvalue>
+    </select>
+    <div id="vastus4">Siia tuleb vastus...</div>
+</form>
+
+<script src="kalk1.js"></script>
+</body>
+</html>
